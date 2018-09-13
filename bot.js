@@ -341,4 +341,8 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`♛ Road To 3k 💎`,"http://twitch.tv/S-F")
+});
 client.login(process.env.BOT_TOKEN);
